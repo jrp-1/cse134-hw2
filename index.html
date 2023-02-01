@@ -120,6 +120,40 @@
     </section>
     <hr>
 
+    <section id="choices">
+        <h2>Selection boxes</h2>
+        <hr>
+        <label for="color-select">Choose a color:</label>
+        <select id="color-select">
+            <optgroup label="Greys">
+                <option>Black</option>
+                <option>White</option>
+                <option>Grey</option>
+            </optgroup>
+            <optgroup label="Primary Colors">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+            </optgroup>
+        </select>
+
+        <form action="javascript:void(0);">
+            <label>Text:
+                <input name="user-text" />
+            </label>
+            <button>Does Nothing</button>
+
+            <fieldset>
+                <legend>Choose a snack</legend>
+                <input type="radio" id="cookie" name="snack" value="co"><label for="cookie">Cookie</label><br>
+                <input type="radio" id="popcorn" name="snack" value="po"><label for="popcorn">Popcorn</label><br>
+                <input type="radio" id="chocolate" name="snack" value="ch"><label for="chocolate">Chocolate</label><br>
+            </fieldset>
+        </form>
+
+    </section>
+    <hr>
+
     </main>
 
     <footer>
