@@ -22,29 +22,66 @@
     
     <nav class="menu">
       <ul>
-        <li><a href="#pictures">Pictures</a></li>
-        <li><a href="#code">Section 2</a></li>
-        <li><a href="#3">Section 3</a></li>
+        <li><strong><a href="#pictures">Pictures</a></strong></li>
+        <li><strong><a href="#code">Section 2</a></strong></li>
+        <li><strong><a href="#misc">Section 3</a></strong></li>
       </ul>
     </nav>
     
     <main>
 
 
-        
-    <header id="pictures">
-    <h2>Pictures</h2>
-    </header>
-    <picture>
-        <img alt="Geisel" src="images/geisel.jpeg">
-    </picture>
+    <section id="pictures">
+        <header>
+        <h2>Pictures</h2>
+        </header>
+        <picture>
+            <img alt="Geisel" src="images/geisel.jpeg">
+        </picture>
+    </section>
 
-    <header id="code">
-        <h2>Code</h2>
-        <h3>School</h3>
-        <h3>Projects</h3>
-    </header>
+    <section id="code">
+        <header>
+            <h2>Code</h2>
+            <br >
+        </header>
+            <h3>School</h3>
+            <h3>Projects</h3>
+                    <p><a href="https://jrapakko.github.io/csgo"><h4> CSGO Configuration </h4></a>
+                        <i>Note: content is currently <pre>styled</pre> incorrectly</i>
+                    </p>
 
+                    <h4>Sample Code</h4>
+                    <code>$.get('/csgo/autoexec/autoexec_template.html', function(data) {
+                            jsonObj = $.parseJSON(data);
+                            // console.log(jsonObj);
+                            // console.log($.parseJSON(data));
+                            // console.log(printAutoExec($.parseJSON(data)));
+                            var vars = $('table#rate, table#netgraph, table#video, table#audio, table#mouse, table#game, table#viewmodel, table#hud, table#xhair, table#keybinds, table#misc');
+                            vars.each(function() { parseValues(jsonObj, this) });
+
+                            var downloadText = printAutoExec(jsonObj);
+
+                            $('.dl-file').prop("href", "data:text/plain;charset=utf-8," + encodeURIComponent(downloadText));
+
+                            if ($('.dl-file').hasClass('disabled')) {
+                                $('.dl-file').toggleClass('disabled');
+                            }
+                        });
+                    </code>
+
+
+                <aside> 
+                    <p> <b>Content<b> on <i>Github</i> </p>
+                </aside>
+    </section>
+
+
+    <section id="Misc">
+        <header>
+        <h2>Misc</h2>
+    </header>
+    </section>
 
     </main>
 
