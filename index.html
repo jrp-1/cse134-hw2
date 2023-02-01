@@ -139,7 +139,7 @@
 
         <form action="javascript:void(0);">
             <label>Text:
-                <input name="user-text" />
+                <input name="user-text">
             </label>
             <button>Does Nothing</button>
 
@@ -150,6 +150,18 @@
                 <input type="radio" id="chocolate" name="snack" value="ch"><label for="chocolate">Chocolate</label><br>
             </fieldset>
         </form>
+
+        <label for="textbox">Write something here:</label>
+        <textarea id="textbox" name="textbox" row="6" cols="48">Lorem ipsum datum</textarea>
+
+        <label for="color-picker">Choose another color</label>
+        <input type="color" list="colorList" id="color-picker">
+        <datalist id="colorList">
+            <option value="red"></option>
+            <option value="black"></option>
+            <option value="green"></option>
+            <option value="purple"></option>
+        </datalist>
 
     </section>
     <hr>
