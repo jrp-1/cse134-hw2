@@ -137,6 +137,14 @@ footer {
     height: 2vh;
 }
 
+h3 {
+    margin-left: 0.25rem;
+}
+
+h4 {
+    margin-left: 0.5rem;
+}
+
 h4.bigly {
     font-size: 2rem;
 }
