@@ -29,6 +29,7 @@ body {
 #navigation > h1 {
     margin-left: 2rem;
 /*    width: 30vh;*/
+    flex-wrap: nowrap;
     font-size: 2rem;
 }
 
