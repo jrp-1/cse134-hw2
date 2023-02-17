@@ -1,0 +1,97 @@
+* {
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: darkgrey;
+    font-weight: 100;
+}
+
+#navigation {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+
+    background-color: darkslateblue;
+
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+
+    font-variant: small-caps;
+    font-stretch: ultra-expanded;
+    font-weight: 200;
+}
+
+#navigation > h1 {
+    margin-left: 2rem;
+    width: 30vh;
+    font-size: 2rem;
+}
+
+#navigation > h1 > a {
+    text-decoration: none;
+    color: lightgrey; /* override */
+}
+
+#navigation > nav {
+    align-self: center;
+    justify-self: center;
+}
+
+nav {
+
+}
+
+nav > ul { 
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav > ul > li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    border-left: 1px solid lightgrey;
+}
+
+nav > ul > li:first-child {
+    border-left: none;
+}
+
+
+nav > ul > li a {
+    text-decoration: none;
+    display: block;
+    height: 2vh;
+    padding: 4vh 1rem;
+    color: lightgrey;
+    justify-self: center;
+}
+
+nav > ul > li > a:hover {
+    background-color: #7975AF;
+    color: darkgrey;
+}
+
+main {
+    margin-top: 10vh; /* nav bar height */
+    margin-bottom: 2vh;
+    color: black;
+    padding: 2rem 2rem;
+}
+
+
+footer {
+    display: flex;
+    align-content: flex-end;
+    position: fixed;
+    margin-top: 98vh;
+    height: 2vh;
+}
