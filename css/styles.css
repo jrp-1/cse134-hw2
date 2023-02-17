@@ -114,11 +114,14 @@ nav > ul > li a {
     padding: 4vh 1rem;
     color: lightgrey;
     justify-self: center;
+    transition: all 0.5s ease-out;
 }
 
+@media (any-hover: hover) { /* make sure we can hover */
 nav > ul > li > a:hover {
-    background-color: #7975AF;
-    color: darkgrey;
+    background-color: lightgrey;
+    color: darkslateblue;
+}
 }
 
 main {
@@ -147,4 +150,61 @@ h4 {
 
 h4.bigly {
     font-size: 2rem;
+}
+
+
+.svg-cube > svg
+{
+  border: 1px solid black;
+}
+.svg-cube line
+{
+  stroke: #000;
+  stroke-linecap: round;
+}
+.svg-cube line.back
+{
+  stroke-dasharray:2,2;
+}
+.svg-cube text
+{
+  color: #000;
+  font-size: 6px;
+  stroke: #fff;
+  fill: #000;
+  stroke-width:0.1;
+}
+
+.flipped {
+    rotate: 180deg;
+    transform-origin: center;
+}
+
+.skewed {
+    transform: skewX(12deg) translateX(33px);
+    transform-origin: center;
+}
+
+@keyframes greenchange {
+    0%      {background-color: #3d8b48;}
+    10%     {background-color: #50965a;}
+    20%     {background-color: #63a26c;}
+    30%     {background-color: #77ad7e;}
+    40%     {background-color: #8ab991;}
+    50%     {background-color: #9ec5a3;}
+    60%     {background-color: #b1d0b5;}
+    70%     {background-color: #c4dcc8;}
+    80%     {background-color: #d8e7da;}
+    90%     {background-color: #ebf3ec;}
+    100%    {background-color: #ffffff;}
+}
+
+#transform-color-change {
+    background-color: #367d40;
+    animation-name: greenchange;
+    animation-duration: 6s;
+    animation-delay: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
