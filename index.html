@@ -9,7 +9,9 @@
     <title>Portfolio Page</title>
 
 
-    <style>@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200&family=Oxygen+Mono&display=swap');
+    </style>
 
     <link rel="stylesheet" href="css/styles.css">
     <script src="script/scripts.js"></script>
@@ -69,32 +71,31 @@
             <h3>Projects</h3>
                     
                     <h4><a href="https://jrapakko.github.io/csgo">CSGO Configuration</a></h4>
-                    <i>Note:</i> content is currently <pre>styled</pre> incorrectly
+                    <span><b>Note:</b> content is currently <pre>styled</pre> incorrectly</span>
 
                 <div>
                     <h4>Sample Code</h4>
                     <code>$.get('/csgo/autoexec/autoexec_template.html', function(data) {
-                            jsonObj = $.parseJSON(data);
-                            // console.log(jsonObj);
-                            // console.log($.parseJSON(data));
-                            // console.log(printAutoExec($.parseJSON(data)));
-                            var vars = $('table#rate, table#netgraph, table#video, table#audio, table#mouse, table#game, table#viewmodel, table#hud, table#xhair, table#keybinds, table#misc');
-                            vars.each(function() { parseValues(jsonObj, this) });
+    jsonObj = $.parseJSON(data);
+    // console.log(jsonObj);
+    // console.log($.parseJSON(data));
+    // console.log(printAutoExec($.parseJSON(data)));
+    var vars = $('table#rate, table#netgraph, table#video, table#audio, table#mouse, table#game, table#viewmodel, table#hud, table#xhair, table#keybinds, table#misc');
+    vars.each(function() { parseValues(jsonObj, this) });
 
-                            var downloadText = printAutoExec(jsonObj);
+    var downloadText = printAutoExec(jsonObj);
 
-                            $('.dl-file').prop("href", "data:text/plain;charset=utf-8," + encodeURIComponent(downloadText));
+    $('.dl-file').prop("href", "data:text/plain;charset=utf-8," + encodeURIComponent(downloadText));
 
-                            if ($('.dl-file').hasClass('disabled')) {
-                                $('.dl-file').toggleClass('disabled');
-                            }
-                        });
-                    </code>
+    if ($('.dl-file').hasClass('disabled')) {
+        $('.dl-file').toggleClass('disabled');
+    }
+});</code>
                 </div>
 
 
                 <aside> 
-                    <p> <b>Content</b> on <i>Github</i> </p>
+                    <a href="https://github.com/jrapakko/csgo">Content on Github</a>
                 </aside>
     </section>
     <hr>
