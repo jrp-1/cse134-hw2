@@ -2,6 +2,26 @@
     font-family: "Fira Sans", sans-serif;
 }
 
+@media only screen and (min-width: 1200px) { 
+    html {
+    scroll-behavior: auto;
+    }
+}
+
+/* smooth scrolling for non pc */
+@media only screen and (max-width: 992px) {
+html {
+    scroll-behavior: smooth;
+}
+}
+
+/* accessiblity for smooth scroll */
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 img {
     max-width: 100vw;
     width: 100%;
