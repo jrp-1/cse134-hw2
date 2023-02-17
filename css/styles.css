@@ -53,17 +53,22 @@ body {
     margin: 0;
 }
 
-#navigation > h1 {
+#page-title {
     display: flex;
     padding-left: 0.5rem;
     flex: 2 1 auto;
     font-size: 2rem;
 }
 
-#navigation > h1 > a {
+#page-title {
+    color: lightgrey;
+}
+
+#navigation > a > h1 {
     text-decoration: none;
     color: lightgrey; /* override */
     white-space: nowrap;
+    font-size: 2rem;
 }
 
 #navigation > nav {
@@ -130,4 +135,8 @@ footer {
     position: fixed;
     margin-top: 98vh;
     height: 2vh;
+}
+
+h4.bigly {
+    font-size: 2rem;
 }
