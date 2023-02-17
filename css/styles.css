@@ -124,6 +124,12 @@ nav > ul > li > a:hover {
 }
 }
 
+
+/* scroll margin fix */
+.anchor {
+    scroll-margin-top: 10vh;
+}
+
 main {
     margin-top: 10vh; /* nav bar height */
     margin-bottom: 2vh;
