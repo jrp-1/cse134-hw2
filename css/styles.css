@@ -2,6 +2,7 @@
     font-family: "Fira Sans", sans-serif;
 }
 
+/* scroll-behavior should default to auto */
 @media screen and (min-width: 1200px) { 
     html {
     scroll-behavior: auto;
